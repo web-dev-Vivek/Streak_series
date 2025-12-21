@@ -138,17 +138,3 @@ by combining **theory + real project implementation**.
 
 ---
 
-## ✅ Tech Stack
-- React
-- Vite
-- JavaScript (ES6+)
-- Tailwind CSS / CSS Modules
-- React Router
-- Zustand
-- Vitest
-
----
-
-### 💡 Tip
-Always use **Markdown headings (`#`, `##`) and lists (`-`)**  
-Otherwise GitHub will show everything as a single paragraph.
