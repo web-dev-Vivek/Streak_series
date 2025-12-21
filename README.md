@@ -1,133 +1,154 @@
-Covering all the core concept by theory and by implementing them to actual project
-Week 1: Components & Rendering Basics
-Goal: React ke core building blocks aur UI render karne ka tarika seekhna.
-• Day 1
-• Topics: CLI Tools & Setup
-• Subtopics: Vite installation, Folder structure, npm setup.
-• Task: Vite se naya project banayein aur screen par apna naam render karein.
-• Day 2
-• Topics: JSX & Component Basics
-• Subtopics: JSX syntax rules, self-closing tags, aur functional components.
-• Task: Ek Header aur Footer component banakar unhe App.jsx mein
-export/import karein.
-• Day 3
-• Topics: Props vs State (Intro)
-• Subtopics: Data passing, destructuring, aur unidirectional data flow.
-• Task: Ek UserCard component banayein aur parent se "username" aur "age" pass
-karein.
-• Day 4
-• Topics: Conditional Rendering
-• Subtopics: Ternary operators aur Logical && operator.
-• Task: Ek message dikhayein jo tabhi dikhe jab isLoggedIn prop true ho.
-• Day 5
-• Topics: Lists and Keys
-• Subtopics: .map() function ka use aur unique key prop ki importance.
-• Task: Ek array se 5 fruit names ki list render karein.
-• Day 6
-• Topics: Composition & Components
-• Subtopics: Props children aur reusable component logic.
-• Task: Ek Container component banayein jo apne andar ke kisi bhi element ko
-border de sake.
-• Day 7
-• Topics: Events & Review
-• Subtopics: onClick aur onChange event handlers.• Task: Ek button banayein jo click karne par console mein "Button Clicked" print
-kare.
-•
-🏆 Weekly Project: Ek Static Portfolio Website banayein jisme header, about, aur
-projects section ho.
-Week 2: State Management & Hooks Basics
-Goal: Hooks ka use karke app ko interactive banana.
-• Day 8
-• Topics: useState Hook
-• Subtopics: Initial state, state updates, aur re-rendering logic.
-• Task: Ek Counter app banayein jisme Increment aur Decrement buttons hon.
-• Day 9
-• Topics: Forms & Inputs
-• Subtopics: Controlled components aur multi-input handling.
-• Task: Ek simple form banayein jo user ka input live screen par dikhaye.
-• Day 10
-• Topics: useEffect Hook
-• Subtopics: Dependency array aur side effects handle karna.
-• Task: Page load hone par ek baar console mein "Welcome" message dikhayein.
-• Day 11
-• Topics: Component Lifecycle
-• Subtopics: Mounting, Updating, aur Unmounting phase.
-• Task: useEffect ke saath ek timer banayein jo har second update ho.
-• Day 12
-• Topics: Writing CSS
-• Subtopics: CSS Modules aur Tailwind CSS setup.
-• Task: Apne Day 8 ke counter app ko CSS Modules use karke style karein.
-• Day 13
-• Topics: Refs & DOM
-• Subtopics: useRef hook ka use karke DOM elements ko access karna.
-• Task: Ek button banayein jo click hote hi seedha input box ko focus kar de.
-• Day 14• Topics: Hooks Best Practices
-• Subtopics: Rules of hooks aur cleanup functions.
-• Task: Apne purane code ko check karein ki hooks loops ya conditions ke bahar hain
-ya nahi.
-• Day 15
-•
-🏆 Weekly Project: Ek To-Do List App banayein jisme task add aur delete karne ka
-feature ho.
-Week 3: Navigation, APIs & Global State
-Goal: Real data fetch karna aur multiple pages handle karna.
-• Day 16
-• Topics: API Calls (REST)
-• Subtopics: fetch ya Axios ka use data fetch karne ke liye.
-• Task: Ek public API se users ki list fetch karke render karein.
-• Day 17
-• Topics: Loading & Error States
-• Subtopics: API call ke waqt loading spinner dikhana.
-• Task: API fetch karte waqt "Loading..." text dikhayein jo data aane par hat jaye.
-• Day 18
-• Topics: React Router
-• Subtopics: BrowserRouter, Routes, Route, aur Link.
-• Task: Ek App banayein jisme Home aur About page ke beech navigation ho.
-• Day 19
-• Topics: Dynamic Routing
-• Subtopics: useParams ka use dynamic content ke liye.
-• Task: User list mein kisi naam par click karne par /user/:id page par le jayein.
-• Day 20
-• Topics: Context API
-• Subtopics: createContext, Provider, aur useContext.
-• Task: Ek "Theme Switcher" (Light/Dark mode) banayein jo poori app mein kaam
-kare.
-• Day 21• Topics: Custom Hooks
-• Subtopics: Logic reusability aur naming conventions.
-• Task: Ek useFetch hook banayein jo kisi bhi URL se data fetch kar sake.
-• Day 22
-• Topics: State Management (Zustand)
-• Subtopics: Context ke alternatives aur unka setup.
-• Task: Zustand use karke ek basic store banayein jo counter state manage kare.
-• Day 23
-•
-🏆 Weekly Project: Ek Movie Search App banayein jisme user movie search kare
-aur details alag page par dikhein.
-Week 4: Advanced Logic & Performance
-Goal: Professional level ki optimization aur complex state manage karna.
-• Day 24
-• Topics: useReducer Hook
-• Subtopics: Complex state logic, dispatch, aur actions pattern.
-• Task: Day 15 wala To-Do list useReducer ke saath re-build karein.
-• Day 25
-• Topics: Performance (useMemo & useCallback)
-• Subtopics: Unnecessary re-renders ko rokna.
-• Task: Ek filtered list par useMemo lagayein taaki search bar update hone par hi
-filter chale.
-• Day 26
-• Topics: Portals & Suspense
-• Subtopics: Modals banana aur component lazy loading.
-• Task: Ek Modal banayein jo createPortal ka use karke render ho.
-• Day 27
-• Topics: Forms (Advanced)
-• Subtopics: React Hook Form ka introduction.
-• Task: Ek registration form banayein jisme email validation ho.
-• Day 28
-• Topics: Testing Basics• Subtopics: Vitest aur React Testing Library.
-• Task: Ek simple component ka test likhein jo check kare ki text render ho raha hai ya
-nahi.
-• Day 29-30
-•
-🚀 Final Capstone Project: GitHub User Finder.
-• Requirements: Isme Hooks, Router, API fetching, aur Context ka use karke users
-search karein aur unki repos dikhayein.
+# 🚀 React Learning Roadmap (4 Weeks)
+
+A structured 4-week roadmap to **learn React from core concepts to advanced level**
+by combining **theory + real project implementation**.
+
+---
+
+## 📅 Week 1: Components & Rendering Basics
+**Goal:** Learn React’s core building blocks and UI rendering.
+
+### 🔹 Day 1: CLI Tools & Setup
+- **Topics:** CLI Tools & Setup  
+- **Subtopics:** Vite installation, folder structure, npm setup  
+- **Task:** Create a new Vite project and render your name on the screen.
+
+### 🔹 Day 2: JSX & Component Basics
+- **Topics:** JSX & Component Basics  
+- **Subtopics:** JSX syntax rules, self-closing tags, functional components  
+- **Task:** Create `Header` and `Footer` components and import/export them in `App.jsx`.
+
+### 🔹 Day 3: Props vs State (Intro)
+- **Topics:** Props vs State  
+- **Subtopics:** Data passing, destructuring, unidirectional data flow  
+- **Task:** Create a `UserCard` component and pass `username` and `age` from parent.
+
+### 🔹 Day 4: Conditional Rendering
+- **Topics:** Conditional Rendering  
+- **Subtopics:** Ternary operator, logical `&&`  
+- **Task:** Show a message only when `isLoggedIn` prop is `true`.
+
+### 🔹 Day 5: Lists & Keys
+- **Topics:** Lists & Keys  
+- **Subtopics:** `.map()` function, unique `key` prop  
+- **Task:** Render a list of 5 fruits from an array.
+
+### 🔹 Day 6: Composition & Components
+- **Topics:** Component Composition  
+- **Subtopics:** `props.children`, reusable components  
+- **Task:** Create a `Container` component that adds a border to its children.
+
+### 🔹 Day 7: Events & Review
+- **Topics:** Events  
+- **Subtopics:** `onClick`, `onChange`  
+- **Task:** Create a button that logs **"Button Clicked"** on click.
+
+### 🏆 Weekly Project
+**Static Portfolio Website**
+- Sections: Header, About, Projects
+
+---
+
+## 📅 Week 2: State Management & Hooks Basics
+**Goal:** Make apps interactive using Hooks.
+
+### 🔹 Day 8: `useState` Hook
+- **Task:** Build a Counter app with Increment & Decrement buttons.
+
+### 🔹 Day 9: Forms & Inputs
+- **Task:** Create a form that shows live input on screen.
+
+### 🔹 Day 10: `useEffect` Hook
+- **Task:** Log **"Welcome"** once when the page loads.
+
+### 🔹 Day 11: Component Lifecycle
+- **Task:** Create a timer that updates every second using `useEffect`.
+
+### 🔹 Day 12: Writing CSS
+- **Task:** Style the Counter app using CSS Modules.
+
+### 🔹 Day 13: Refs & DOM
+- **Task:** Button that focuses input using `useRef`.
+
+### 🔹 Day 14: Hooks Best Practices
+- **Task:** Review code to ensure hooks are not inside loops or conditions.
+
+### 🏆 Weekly Project
+**To-Do List App**
+- Add & delete tasks
+
+---
+
+## 📅 Week 3: Navigation, APIs & Global State
+**Goal:** Work with APIs and multi-page apps.
+
+### 🔹 Day 16: API Calls (REST)
+- **Task:** Fetch and render users from a public API.
+
+### 🔹 Day 17: Loading & Error States
+- **Task:** Show **Loading...** while fetching data.
+
+### 🔹 Day 18: React Router
+- **Task:** Navigate between Home and About pages.
+
+### 🔹 Day 19: Dynamic Routing
+- **Task:** `/user/:id` page using `useParams`.
+
+### 🔹 Day 20: Context API
+- **Task:** Global Light/Dark Theme Switcher.
+
+### 🔹 Day 21: Custom Hooks
+- **Task:** Create a reusable `useFetch` hook.
+
+### 🔹 Day 22: Zustand State Management
+- **Task:** Create a global counter store using Zustand.
+
+### 🏆 Weekly Project
+**Movie Search App**
+- Search movies
+- View details on a separate page
+
+---
+
+## 📅 Week 4: Advanced Logic & Performance
+**Goal:** Professional-level React optimization.
+
+### 🔹 Day 24: `useReducer`
+- **Task:** Rebuild To-Do app using `useReducer`.
+
+### 🔹 Day 25: Performance Optimization
+- **Task:** Use `useMemo` for filtered lists.
+
+### 🔹 Day 26: Portals & Suspense
+- **Task:** Create a Modal using `createPortal`.
+
+### 🔹 Day 27: Advanced Forms
+- **Task:** Registration form with email validation using React Hook Form.
+
+### 🔹 Day 28: Testing Basics
+- **Task:** Write a test to check if text is rendered.
+
+---
+
+## 🚀 Final Capstone Project: GitHub User Finder
+**Requirements:**
+- Search GitHub users
+- View user profiles & repositories
+- Use Hooks, Router, API fetching, and Context API
+
+---
+
+## ✅ Tech Stack
+- React
+- Vite
+- JavaScript (ES6+)
+- Tailwind CSS / CSS Modules
+- React Router
+- Zustand
+- Vitest
+
+---
+
+### 💡 Tip
+Always use **Markdown headings (`#`, `##`) and lists (`-`)**  
+Otherwise GitHub will show everything as a single paragraph.
