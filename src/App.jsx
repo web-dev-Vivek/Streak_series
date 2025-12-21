@@ -1,17 +1,12 @@
 import HEADER from "./component/header";
 import Footer from "./component/Footer";
-import Usercard from "./component/Usercard";
+import IsloggedIn from "./component/isloggedin";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <Usercard
-        username="Vivek jha"
-        email="progamervivek2020@gmail.com"
-        age={20}
-        income={0}
-      />
+      <IsloggedIn isloggedin={true} />
       <HEADER />
 
       <Footer />
