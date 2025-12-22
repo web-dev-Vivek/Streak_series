@@ -1,7 +1,7 @@
 import React from "react";
 
-function wrapper() {
-  return <div>wrapper</div>;
+function wrapper(children) {
+  return <>{children}</>;
 }
 
 export default wrapper;
