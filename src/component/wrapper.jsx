@@ -1,6 +1,6 @@
 import React from "react";
 
-function wrapper(children) {
+function wrapper({ children }) {
   return <>{children}</>;
 }
 

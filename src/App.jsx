@@ -13,9 +13,9 @@ function App() {
     <>
       <IsloggedIn isloggedin={true} />
       <HEADER />
-      {/* <Wrapper>
+      <Wrapper>
         <h1>hey! bro how are you</h1>
-      </Wrapper> */}
+      </Wrapper>
 
       <Footer />
       <button onClick={increaseCount}>Increase Count</button>
