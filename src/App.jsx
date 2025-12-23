@@ -5,15 +5,21 @@ import Listrender from "./component/Listrender";
 import Wrapper from "./component/wrapper";
 import "./App.css";
 
+function increaseCount() {
+  console.log("button clicked");
+}
 function App() {
   return (
     <>
       <IsloggedIn isloggedin={true} />
       <HEADER />
-      <wrapper>
+      {/* <Wrapper>
         <h1>hey! bro how are you</h1>
-      </wrapper>
+      </Wrapper> */}
+
       <Footer />
+      <button onClick={increaseCount}>Increase Count</button>
+
       <Listrender />
     </>
   );
