@@ -4,6 +4,7 @@ import IsloggedIn from "./component/isloggedin";
 import Usercard from "./component/Usercard";
 import Listrender from "./component/Listrender";
 import Wrapper from "./component/wrapper";
+import Hero from "./component/hero";
 import "./App.css";
 
 function increaseCount() {
@@ -14,6 +15,7 @@ function App() {
     <>
       <HEADER />
 
+      <Hero />
       <Footer />
     </>
   );
