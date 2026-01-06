@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 function Fetching() {
+  const API = import.meta.env.API_KEY;
   const [posts, setposts] = useState([]);
   const [loading, setloading] = useState(true);
   const [error, seterror] = useState(null);
@@ -11,7 +12,7 @@ function Fetching() {
         setposts(data);
         setloading(false);
       })
-      .catch((err) => {     
+      .catch((err) => {
         seterror(err.message);
         setloading(false);
       });
