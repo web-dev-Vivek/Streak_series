@@ -1,17 +1,19 @@
-import { useState } from "react";
-import ThemeContext from "./ThemeContext";
+import { useState, createContext, useEffect } from "react";
+
+export const ThemeContext = createContext();
 
 function ThemeProvider({ children }) {
-  const [Theme, setTheme] = useState("light");
-
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-  };
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    fetch(`https://potterapi-fedeperin.vercel.app/en/books
+`)
+      .then((res) => res.json())
+      .then((data) => setData(data))
+      .catch((err) => console.error(err));
+  }, []);
 
   return (
-    <ThemeContext.Provider value={{ Theme, toggleTheme }}>
-      {children}
-    </ThemeContext.Provider>
+    <ThemeContext.Provider value={{ data }}>{children}</ThemeContext.Provider>
   );
 }
 

@@ -1,17 +1,21 @@
-import { useEffect } from "react";
+import { ThemeContext } from "../context/ThemeProvider.jsx";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 function MovieAPI() {
-  // const API_KEY = import.meta.env.VITE_TASTEDIVE_KEY;
-
-  useEffect(() => {
-    fetch(`https://potterapi-fedeperin.vercel.app/en/books
-`)
-      .then((res) => res.json())
-      .then((data) => console.log(data))
-      .catch((err) => console.error(err));
-  }, []);
-
-  return <div></div>;
+  const { data } = useContext(ThemeContext);
+  console.log({ data });
+  return (
+    <div>
+      {data.map((hey) => {
+        return (
+          <div key={hey.id}>
+            <Link to={`/${hey.number}`}>{hey.title}</Link>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
 export default MovieAPI;
